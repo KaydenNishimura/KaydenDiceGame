@@ -14,7 +14,11 @@ public class DiceGame {
 		int die2;
 		String[] playerChoices;
 		Language = langlnlit();
+<<<<<<< HEAD
+		String langChoice = getInput("Select a language: \n[0]English\n[1]Hawaiian Pidgin\n[2]Chinese Mandarin");
+=======
 		String langChoice = getInput("Select a language: \n[0]English\n[1]Hawaiian Pidgin\n[2]Korean");
+>>>>>>> master
 		lang = Integer.parseInt(langChoice);
 		die1 = roll();
 		die2 = roll();
@@ -32,8 +36,13 @@ public class DiceGame {
 			playerChoices[c] = getInput(Language[lang][3]+(c+1)+Language[lang][4]);
 			
 			}
+<<<<<<< HEAD
+			System.out.println(Language[lang][5]+die1+Language[lang][6]+die2);
+			//Start a new loop here.
+=======
 			System.out.println(Language[0][5]+die1+Language[lang][6]+die2);
 			//Start a new loop here. 
+>>>>>>> master
 			for(int c=0; c<count;c++) {
 				if(didIWin(die1,die2,playerChoices[c]))
 				{
@@ -90,6 +99,20 @@ public class DiceGame {
 				"even",
 				"odd"
 			},
+<<<<<<< HEAD
+			//Chinese
+			{
+				"你想玩吗?\n好啊\n不用了",
+				"有多少人玩?",
+				"好啊",
+				"玩家 ", ": [0] 偶\n[1] 奇",
+				"骰子 1: ", "\n骰子 2: ",
+				" 赢了!" ,
+				" 输了!" ,
+				"你想玩吗?\n好啊\n不用了",
+				"偶",
+				"奇"
+=======
 			//Korean
 			{
 				"플레이하시겠습니까?\\n예\\n아니요\n",
@@ -104,6 +127,7 @@ public class DiceGame {
 				"이상한"
 				
 				
+>>>>>>> master
 			}
 			
 		};
