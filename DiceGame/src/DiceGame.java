@@ -14,7 +14,7 @@ public class DiceGame {
 		int die2;
 		String[] playerChoices;
 		Language = langlnlit();
-		String langChoice = getInput("Select a language: \n[0]English\n[1]Hawaiian Pidgin");
+		String langChoice = getInput("Select a language: \n[0]English\n[1]Hawaiian Pidgin\n[2]Korean");
 		lang = Integer.parseInt(langChoice);
 		die1 = roll();
 		die2 = roll();
@@ -33,7 +33,7 @@ public class DiceGame {
 			
 			}
 			System.out.println(Language[0][5]+die1+Language[lang][6]+die2);
-			//Start a new loop here.
+			//Start a new loop here. 
 			for(int c=0; c<count;c++) {
 				if(didIWin(die1,die2,playerChoices[c]))
 				{
@@ -89,6 +89,21 @@ public class DiceGame {
 				"Like try brah?\nYessah\nNo need brah", 
 				"even",
 				"odd"
+			},
+			//Korean
+			{
+				"플레이하시겠습니까?\\n예\\n아니요\n",
+				"플레이어는 몇 명인가요?\n",
+				"예",
+				"플레이어", ": [0] 짝수\\n[1] 홀수",
+				"다이 1:", "\\n다이 2:",
+				"승리!",
+				"진다!",
+				"플레이하시겠습니까?\\n예\\n아니요",
+				"심지어",
+				"이상한"
+				
+				
 			}
 			
 		};
