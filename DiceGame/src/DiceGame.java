@@ -99,7 +99,6 @@ public class DiceGame {
 				"even",
 				"odd"
 			},
-<<<<<<< HEAD
 			//Chinese
 			{
 				"你想玩吗?\n好啊\n不用了",
@@ -111,8 +110,8 @@ public class DiceGame {
 				" 输了!" ,
 				"你想玩吗?\n好啊\n不用了",
 				"偶",
-				"奇"
-=======
+				"奇"},
+
 			//Korean
 			{
 				"플레이하시겠습니까?\\n예\\n아니요\n",
@@ -126,8 +125,6 @@ public class DiceGame {
 				"심지어",
 				"이상한"
 				
-				
->>>>>>> master
 			}
 			
 		};
